@@ -1,1 +1,1 @@
-print("hello to the next programming language")
+print("Hello to the next programming langauge!")
