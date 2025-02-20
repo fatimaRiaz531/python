@@ -19,5 +19,3 @@ print("5 is less than 2")
 
 #   or is tarhn b likh sakty h magr bina space k nhi agr likhna hoga to error aye ga yeh to dono space k sth likho 
 if 5 < 2:
-    print("5 is less than 2")
-        print("5 is less than 2")
