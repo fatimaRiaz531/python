@@ -50,7 +50,7 @@ if not st.session_state.game_over:
             st.session_state.current_question += 1
             if st.session_state.current_question == len(questions):
                 st.session_state.game_over = True
-            st.experimental_rerun()  # Restart the app
+            st.experimental_retrun()  # Restart the app
         else:
             st.warning("Please select an answer before submitting.")
 
