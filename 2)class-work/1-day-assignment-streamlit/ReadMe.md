@@ -5,3 +5,5 @@ phr terminal mai command likhi (streamlit run app.py) run krny k lye
 (pip install fastapi uvicorn) phr nextjs k sth fastAPI connect krny k lye 
 
 
+2- speech app k lye hmny yeh install krna h vs code mai 
+pip install streamlit SpeechRecognition gtts googletrans==4.0.0-rc1 pydub
