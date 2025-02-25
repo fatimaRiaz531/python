@@ -5,6 +5,15 @@ import json
 import plotly.graph_objects as go
 import plotly.express as px
 from time import sleep
+import os
+import sys
+
+# Add project root to Python path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+sys.path.append(project_root)
+
+# Now you can import from other folders
+from other_folders.some_file import some_function
 
 # Page config must be the first streamlit command
 st.set_page_config(page_title="Salon Booking System", page_icon="💇‍♀️", layout="wide")
@@ -384,6 +393,13 @@ def salon_dashboard():
         st.session_state.logged_in = False
         st.session_state.user_type = None
         st.rerun()
+
+def get_file_path(filename):
+    return os.path.join(os.path.dirname(__file__), 'static', filename)
+
+# Use it like this
+image_path = get_file_path('image.jpg')
+st.image(image_path)
 
 def main():
     if not st.session_state.logged_in:

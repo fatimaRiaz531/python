@@ -1,5 +1,5 @@
 fastapi==0.68.1
-streamlit==1.24.0
+streamlit==1.32.0
 sqlalchemy==1.4.23
 pydantic==1.8.2
 python-jose[cryptography]==3.3.0
@@ -8,4 +8,7 @@ python-multipart==0.0.5
 stripe==2.60.0
 emails==0.6
 uvicorn==0.15.0
-python-dotenv==0.19.0 
+python-dotenv==0.19.0
+plotly==5.18.0
+requests==2.31.0
+# Add any other packages you're using 
