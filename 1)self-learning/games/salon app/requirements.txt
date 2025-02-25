@@ -1,3 +1,6 @@
 streamlit==1.42.1
+streamlit-calendar==1.2.1
+pandas
+numpy
 plotly==6.0.0
 requests==2.32.3
