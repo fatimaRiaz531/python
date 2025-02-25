@@ -6,15 +6,14 @@ import plotly.graph_objects as go
 import plotly.express as px
 from time import sleep
 import os
-import sys
+from pathlib import Path
 
-# Add project root to Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-sys.path.append(project_root)
+# Add root directory to Python path
+ROOT_DIR = Path(__file__).resolve().parent
 
-# Helper function for file paths (keep this, but don't use it yet)
-def get_file_path(filename):
-    return os.path.join(os.path.dirname(__file__), 'static', filename)
+# Function to get static file paths
+def get_static_path(folder, filename):
+    return os.path.join(ROOT_DIR, 'static', folder, filename)
 
 # Page config must be the first streamlit command
 st.set_page_config(page_title="Salon Booking System", page_icon="💇‍♀️", layout="wide")
