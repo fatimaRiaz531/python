@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatima - Frontend Developer</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#home">Fatima</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="title">Hi, I'm <span class="highlight">Fatima</span></h1>
+        <div class="subtitle">Frontend Developer & UI Designer</div>
+        <p class="description">
+          Crafting modern and responsive web experiences with cutting-edge
+          technologies
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="tech-stack">
+          <i class="fab fa-react"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate Frontend Developer with expertise in creating
+              modern web applications. I specialize in React, Next.js, and
+              responsive design, always striving to build user-friendly and
+              performant web experiences.
+            </p>
+            <p>
+              Currently exploring Python and AI development, I'm constantly
+              learning and adapting to new technologies to stay at the forefront
+              of web development.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-content">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Social Media Project -->
+          <div class="project-card">
+            <img
+              src="{{ url_for('static', filename='images/social-media.jpg') }}"
+              alt="Social Media Project"
+            />
+            <div class="project-content">
+              <h3>Social Media Platform</h3>
+              <p>
+                A full-stack social media application with real-time features
+              </p>
+              <div class="tech-stack">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://social-media-app-next-js-orcin.vercel.app/"
+                  target="_blank"
+                  class="btn primary"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/fatimaRiaz531/Social-Media-App-NextJS.git"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-commerce Project -->
+          <div class="project-card">
+            <img
+              src="{{ url_for('static', filename='images/ecommerce.jpg') }}"
+              alt="E-commerce Project"
+            />
+            <div class="project-content">
+              <h3>E-commerce Website</h3>
+              <p>A full-stack e-commerce platform with payment integration</p>
+              <div class="tech-stack">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://hackathon2-figma-website-nfmd.vercel.app/"
+                  target="_blank"
+                  class="btn primary"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/fatimaRiaz531/hackathon2-figma-website.git"
+                  target="_blank"
+                  class="btn secondary"
+                >
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-content">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>your.email@example.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Your Location</span>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/fatimaRiaz531" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Fatima. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

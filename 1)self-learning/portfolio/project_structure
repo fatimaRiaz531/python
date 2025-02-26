@@ -1,0 +1,11 @@
+portfolio/
+├── assets/
+│   ├── images/
+│   │   ├── profile.jpg
+│   │   ├── project1.jpg
+│   │   ├── project2.jpg
+│   │   └── project3.PNG
+│   └── styles/
+│       └── style.css
+├── requirements.txt
+└── app.py 
